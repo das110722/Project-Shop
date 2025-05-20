@@ -1,10 +1,31 @@
-import { useState } from 'react'
-import './App.css'
+import React from 'react'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { routes } from './/routes/index.js'
+import DefaultComponent from './components/DefaultComponent/DefaultComponent.jsx'
 
-function App() {
-
+const App = () => {
   return (
-    <div>ccc</div>
+    <div>
+      <Router>
+        <Routes>
+          {routes.map((route, index) => {
+            const Page = route.page
+            const Layout = route.isShowHeader ? DefaultComponent : React.Fragment
+            return (
+              <Route
+                key={index}
+                path={route.path}
+                element={
+                  <Layout>
+                    <Page />
+                  </Layout>
+                }
+              />
+            )
+          })}
+        </Routes>
+      </Router>
+    </div>
   )
 }
 
