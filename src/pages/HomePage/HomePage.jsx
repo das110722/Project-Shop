@@ -2,6 +2,7 @@ import classNames from "classnames/bind";
 import styles from "./HomePage.module.scss";
 import TypeProduct from "@/components/TypeProduct/TypeProduct";
 import Slider from "@/components/Slider/Sider";
+import CardComponent from "@/components/CardComponent/CardComponent";
 // Image Slider
 import SlideIphone from "@/assets/images/slider/iphone.jpg";
 import SlideAppWatch from "@/assets/images/slider/appwatch.jpg";
@@ -23,7 +24,7 @@ const HomePage = () => {
   return (
     <>
       <div style={{ padding: "0 120px" }}>
-        <div className={cx("wrapper")}>
+        <div className={cx("type-product")}>
           {arr.map((item) => {
             return <TypeProduct name={item} key={item} />;
           })}
@@ -31,6 +32,9 @@ const HomePage = () => {
       </div>
       <div className={cx("slider")}>
           <Slider arrImages={[SlideIphone, SlideAppWatch, SlideMacBook]} />
+          <div className={cx("card")}>
+            <CardComponent/>
+          </div>
         </div>
     </>
   );

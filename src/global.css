@@ -8,7 +8,8 @@
 :root {
   --color-white: #ffffff;
   --color-black: #000000;
-  --color-gray: #b7b7b7;
+  --color-gray: #b3b3b3;
+  --color-red: #ef1111;
 
   /* special */
   --color-frist: #0F2A1D;

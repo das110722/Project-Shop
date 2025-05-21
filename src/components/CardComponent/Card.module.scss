@@ -1,0 +1,30 @@
+.card {
+  .product {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 16px;
+    color: var(--color-black);
+    margin: 5px 0;
+  }
+
+  .report-text {
+    font-size: 14px;
+    color: var(--color-gray);
+    display: flex;
+    align-items: center;
+    margin: 12px 0 4px;
+  }
+  .price-text {
+    color: var(--color-red);
+    font-size: 15px;
+    font-weight: 500;
+    margin: 6px 0 0;
+
+    .discount-text {
+      font-size: 12px;
+      color: var(--color-gray);
+      font-weight: 400;
+      margin: 0 10px;
+    }
+  }
+}
