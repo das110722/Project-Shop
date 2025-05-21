@@ -2,7 +2,7 @@ import { Col, Row } from "antd";
 import classNames from "classnames/bind";
 import styles from "./Header.module.scss";
 import { UserOutlined, CaretDownOutlined , ShoppingCartOutlined} from "@ant-design/icons";
-import ButtonInputSearch from "../ButtonInputSearch/ButtonInputSearch";
+import ButtonInputSearch from "@/components/ButtonInputSearch/ButtonInputSearch";
 
 const cx = classNames.bind(styles);
 
