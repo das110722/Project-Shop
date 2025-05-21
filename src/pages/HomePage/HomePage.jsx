@@ -1,23 +1,39 @@
-import React from 'react'
-import TypeProduct from '@/components/TypeProduct/TypeProduct.jsx'
-import classNames from 'classnames/bind'
-import styles from './HomePage.module.scss'
+import classNames from "classnames/bind";
+import styles from "./HomePage.module.scss";
+import TypeProduct from "@/components/TypeProduct/TypeProduct";
+import Slider from "@/components/Slider/Sider";
+// Image Slider
+import SlideIphone from "@/assets/images/slider/iphone.jpg";
+import SlideAppWatch from "@/assets/images/slider/appwatch.jpg";
+import SlideMacBook from "@/assets/images/slider/macbook.jpg";
 
-const cx = classNames.bind(styles)
+const cx = classNames.bind(styles);
 
 const HomePage = () => {
-  const arr = ['TV','Laptop','Phone','Tablet','Watch']
+  const arr = [
+    "Mac",
+    "Iphone",
+    "Ipad",
+    "Apple Watch",
+    "AirPods",
+    "AirTag",
+    "Apple TV 4K",
+    "Phụ Kiện",
+  ];
   return (
-    <div style={{ padding: '0 120px'}}>
-      <div className={cx('wrapper')}>
-        {arr.map((item) => {
-        return (
-          <TypeProduct name={item} key={item} />
-        )
-      })}
+    <>
+      <div style={{ padding: "0 120px" }}>
+        <div className={cx("wrapper")}>
+          {arr.map((item) => {
+            return <TypeProduct name={item} key={item} />;
+          })}
+        </div>
       </div>
-    </div>
-  )
-}
+      <div className={cx("slider")}>
+          <Slider arrImages={[SlideIphone, SlideAppWatch, SlideMacBook]} />
+        </div>
+    </>
+  );
+};
 
-export default HomePage
+export default HomePage;

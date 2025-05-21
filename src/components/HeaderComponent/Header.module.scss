@@ -2,6 +2,8 @@
   padding: 10px 120px;
   background-color: var(--color-second);
   align-items: center;
+  gap: 16px;
+  flex-wrap: nowrap;
 
   .wrapper-text {
     font-size: 18px;
@@ -23,6 +25,7 @@
     .wrapper-account--icon {
       font-size: 30px;
       color: var(--color-white);
+      white-space: nowrap;
     }
     .wrapper-account {
       display: flex;
