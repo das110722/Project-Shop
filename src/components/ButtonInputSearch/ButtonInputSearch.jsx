@@ -1,8 +1,8 @@
 import { SearchOutlined } from "@ant-design/icons";
-import InputSearch from "@/components/InputSearch/InputSearch";
-import ButtonSearch from "@/components/ButtonSearch/ButtonSearch";
 import classNames from "classnames/bind";
 import styles from "./ButtonInputSearch.module.scss";
+import InputComponent from "../InputComponent/InputComponent";
+import ButtonComponent from "../ButtonComponent/ButtonComponent";
 
 const cx = classNames.bind(styles);
 
@@ -18,7 +18,7 @@ const ButtonInputSearch = (props) => {
 
   return (
     <div style={{ display: "flex", backgroundColor: "var(--color-white)" }}>
-      <InputSearch
+      <InputComponent
         size={size}
         placeholder={placeholder}
         style={{
@@ -26,7 +26,7 @@ const ButtonInputSearch = (props) => {
           border: "none",
         }}
       />
-      <ButtonSearch
+      <ButtonComponent
         size={size}
         icon={<SearchOutlined style={{ color: colorButton }} />}
         className={cx('custom-button')}

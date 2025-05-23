@@ -8,6 +8,7 @@ import SlideIphone from "@/assets/images/slider/iphone.jpg";
 import SlideAppWatch from "@/assets/images/slider/appwatch.jpg";
 import SlideMacBook from "@/assets/images/slider/macbook.jpg";
 import NavbarComponent from "../../components/NavbarComponent/NavbarComponent";
+import ButtonComponent from "@/components/ButtonComponent/ButtonComponent";
 
 const cx = classNames.bind(styles);
 
@@ -32,12 +33,24 @@ const HomePage = () => {
         </div>
       </div>
       <div className={cx("slider")}>
-          <Slider arrImages={[SlideIphone, SlideAppWatch, SlideMacBook]} />
-          <div className={cx("card")}>
-            <CardComponent/>
-          </div>
-          <NavbarComponent/>
+        <Slider arrImages={[SlideIphone, SlideAppWatch, SlideMacBook]} />
+        <div className={cx("card")}>
+          <CardComponent />
+          <CardComponent />
+          <CardComponent />
+          <CardComponent />
+          <CardComponent />
+          <CardComponent />
+          <CardComponent />
         </div>
+        <div style={{width: "100%", display: "flex", justifyContent: "center"}}>
+          <ButtonComponent
+          textButton="More..."
+          type="outline"
+          className={cx("button")}
+        />
+        </div>
+      </div>
     </>
   );
 };

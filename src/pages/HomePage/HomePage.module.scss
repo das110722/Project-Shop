@@ -16,5 +16,23 @@
         display: flex;
         align-items: center;
         gap: 20px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .button {
+        width: 240px;
+        height: 38px;
+        border-radius: 4px;
+        border: 1px solid var(--color-fourth);
+        color: var(--color-third);
+        font-weight: 500;
+
+        &:hover {
+            background-color: var(--color-fourth);
+            border: 1px solid var(--color-third);
+            color: var(--color-second);
+            cursor: pointer;
+        }
     }
 }

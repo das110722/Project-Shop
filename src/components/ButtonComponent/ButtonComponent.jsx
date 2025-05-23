@@ -1,6 +1,6 @@
 import { Button } from "antd";
 
-const ButtonSearch = ({
+const ButtonComponent = ({
   size,
   styleButton,
   styleTextButton,
@@ -14,4 +14,4 @@ const ButtonSearch = ({
   );
 };
 
-export default ButtonSearch;
+export default ButtonComponent;
