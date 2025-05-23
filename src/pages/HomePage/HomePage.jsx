@@ -7,6 +7,7 @@ import CardComponent from "@/components/CardComponent/CardComponent";
 import SlideIphone from "@/assets/images/slider/iphone.jpg";
 import SlideAppWatch from "@/assets/images/slider/appwatch.jpg";
 import SlideMacBook from "@/assets/images/slider/macbook.jpg";
+import NavbarComponent from "../../components/NavbarComponent/NavbarComponent";
 
 const cx = classNames.bind(styles);
 
@@ -35,6 +36,7 @@ const HomePage = () => {
           <div className={cx("card")}>
             <CardComponent/>
           </div>
+          <NavbarComponent/>
         </div>
     </>
   );

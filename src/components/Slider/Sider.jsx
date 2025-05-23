@@ -1,4 +1,4 @@
-import React from 'react';
+
 import Slider from 'react-slick';
 import { Image } from 'antd';
 
@@ -11,6 +11,7 @@ const Sider = ({ arrImages }) => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 1000,
+    arrows: false,
   };
 
   return (
